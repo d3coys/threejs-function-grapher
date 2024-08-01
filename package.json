@@ -1,0 +1,11 @@
+{
+  "name": "threejs-function-grapher",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "three": "^0.128.0",
+    "vite": "^2.6.4"
+  }
+}
