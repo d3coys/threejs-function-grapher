@@ -1,6 +1,6 @@
 // Import necessary components from Three.js
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import * as THREE from './node_modules/three/build/three.module.js';
+import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
 
 // Initialize scene, camera, and renderer
 const scene = new THREE.Scene();
@@ -31,7 +31,7 @@ const generateVertices = () => {
     const vertices = [];
     const min_x = -1, max_x = 1, step = 0.1;
     for (let x = min_x; x <= max_x; x += step) {
-        for (let y = min_x; y <= max_x; y += step) {
+        for (let y = min_x; x <= max_x; y += step) {
             const z = fun(x, y);
             vertices.push(new THREE.Vector3(x, y, z));
         }
